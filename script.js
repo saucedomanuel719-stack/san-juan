@@ -1,6 +1,13 @@
 /* ============================================================
    ICONOS SVG REUTILIZABLES
    ============================================================ */
+const SUPABASE_URL = "https://wgmjnwmyqitbkxkdaqvg.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable_zTIRQn7c7qLWhhB4EozqhA_gyeNeukj";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
 const ICONS = {
   home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>',
   user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
